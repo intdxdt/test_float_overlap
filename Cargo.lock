@@ -1,0 +1,30 @@
+[root]
+name = "test_float_overlap"
+version = "0.1.0"
+dependencies = [
+ "bit_twiddle 0.1.0 (git+https://github.com/intdxdt/bit_twiddle)",
+ "double_bits 0.1.0 (git+https://github.com/intdxdt/double_bits)",
+]
+
+[[package]]
+name = "bit_twiddle"
+version = "0.1.0"
+source = "git+https://github.com/intdxdt/bit_twiddle#7ef754d0d605073b6071a018240a0412f75acf33"
+
+[[package]]
+name = "byteorder"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "double_bits"
+version = "0.1.0"
+source = "git+https://github.com/intdxdt/double_bits#e67eff381c18cbf8c81fc40dbf8f26e662d869c3"
+dependencies = [
+ "byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum bit_twiddle 0.1.0 (git+https://github.com/intdxdt/bit_twiddle)" = "<none>"
+"checksum byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ff81738b726f5d099632ceaffe7fb65b90212e8dce59d518729e7e8634032d3d"
+"checksum double_bits 0.1.0 (git+https://github.com/intdxdt/double_bits)" = "<none>"

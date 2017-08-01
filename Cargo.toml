@@ -1,0 +1,8 @@
+[package]
+name = "test_float_overlap"
+version = "0.1.0"
+authors = ["Titus Tienaah <titus.intdxdt@gmail.com>"]
+
+[dependencies]
+double_bits = { git = "https://github.com/intdxdt/double_bits", branch = "master" }
+bit_twiddle = { git = "https://github.com/intdxdt/bit_twiddle", branch = "master" }
