@@ -1,5 +1,5 @@
 # test_float_overlap
-Test if the significands of two floating point numbers overlap.
+Test if the significands of two f64 values overlap - rust.
 
 
 ## Credits
