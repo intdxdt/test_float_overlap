@@ -53,12 +53,12 @@ pub fn test_overlap(a: f64, b: f64) -> bool {
     let a1 = lo(a);
     let b0 = hi(b);
     let b1 = lo(b);
-    (b1 <= a0) && (a1 <= b0)
     //[a1------a0]
     //     [b1-----b0]
     //---------or----------
     //    [a1-------a0]
     //[b1-------b0]
+    (b1 <= a0) && (a1 <= b0)
 }
 
 
