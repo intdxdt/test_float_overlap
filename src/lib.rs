@@ -54,6 +54,11 @@ pub fn test_overlap(a: f64, b: f64) -> bool {
     let b0 = hi(b);
     let b1 = lo(b);
     (b1 <= a0) && (a1 <= b0)
+    //[a1------a0]
+    //     [b1-----b0]
+    //---------or----------
+    //    [a1-------a0]
+    //[b1-------b0]
 }
 
 
@@ -63,8 +68,8 @@ mod float_overlap_test {
 
     #[test]
     fn test_test_overlap() {
-        assert!(test_overlap(1.5, 0.5));
-        assert!(test_overlap(2f64.powi(-52), 1.0 + 2f64.powi(-52)));
+        assert!( test_overlap(1.5, 0.5));
+        assert!( test_overlap(2f64.powi(-52), 1.0 + 2f64.powi(-52)));
         assert!(!test_overlap(1.0, 0.5));
 
         //Test 0
